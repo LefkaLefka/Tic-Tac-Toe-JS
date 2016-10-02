@@ -1,0 +1,96 @@
+body
+{
+	background-color: #E0FFFF;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	font-family: century gothic, footlight mt light;
+	min-width: 455px;
+}
+
+.inputDataForm
+{
+	width: auto;
+	height: 40px;
+	box-shadow: 0 0 7px rgba(0,0,0,0.5);
+	text-align: center;
+	border-radius: 3px;
+}
+
+select
+{
+	border-radius: 13px;
+    background: transparent;
+    height: 20px;
+    border: none;
+	outline: none;
+	box-shadow: 0 0 7px rgba(0,0,0,0.5);
+    font-size: 16px;
+    line-height: 1;
+	font-family: century gothic, footlight mt light;
+}
+
+#dropDownListSize
+{
+	margin: 10px auto 10px 10px;
+	float: left;
+}
+
+.text
+{
+	vertical-align: middle;
+	font-size: 90px;
+	font-family: consolas;
+	color: #035d5f;
+}
+
+.textSpec
+{
+	font-size: 40px;
+	vertical-align: middle;
+	font-family: cursive;
+	color: #ff5c5c;
+}
+
+#dropDownListComplexity
+{
+	margin: 10px 10px 10px auto;
+	float: right;
+}
+
+.block
+{
+	width: 0;
+	height: 0;
+	margin: 50px auto 75px auto;
+	box-shadow: 0 0 100px rgba(0,0,0,0.5);
+	padding: 5px;
+	border-radius: 3px;
+}
+
+.element
+{
+	width: 75px;
+	height: 75px;
+	margin: 4px 4px -1px 4px;
+	display: inline-block;	
+	box-shadow: 0 0 7px rgba(0,0,0,0.5);
+}
+
+.footerInfo
+{
+	font-weight: bolder;
+	font-size: 15px;
+	color: #40E0D0;
+	text-shadow: 0 0 2px rgba(205, 173, 0, 0.2);
+	text-align: center;
+}
+
+h1.footerInfo a
+{
+	text-decoration: none;
+	color: rgb(59, 201, 187);
+}
+
+h1.footerInfo a:hover
+{
+	text-decoration: underline;
+}
