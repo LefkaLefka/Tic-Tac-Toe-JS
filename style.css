@@ -1,17 +1,14 @@
 body
 {
 	background-color: #E0FFFF;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 	font-family: century gothic, footlight mt light;
 	min-width: 455px;
 }
 
 .inputDataForm
 {
-	width: auto;
 	height: 40px;
 	box-shadow: 0 0 7px rgba(0,0,0,0.5);
-	text-align: center;
 	border-radius: 3px;
 }
 
@@ -24,7 +21,6 @@ select
 	outline: none;
 	box-shadow: 0 0 7px rgba(0,0,0,0.5);
     font-size: 16px;
-    line-height: 1;
 	font-family: century gothic, footlight mt light;
 }
 
@@ -66,14 +62,22 @@ select
 	border-radius: 3px;
 }
 
-.element
+.block .element
 {
+	vertical-align: top;
 	width: 75px;
 	height: 75px;
-	margin: 4px 4px -1px 4px;
-	display: inline-block;	
+	margin: 4px 4px 4px 4px;
+	display: inline-block;
 	box-shadow: 0 0 7px rgba(0,0,0,0.5);
+	text-align: center;
 }
+
+.textElement
+{
+	font-size: 60px;
+}
+
 
 .footerInfo
 {
