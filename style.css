@@ -5,10 +5,44 @@ body
 	min-width: 455px;
 }
 
+#popUpWindow
+{
+	width: 420px;
+	height: 200px;
+	margin: 250px auto 75px auto;
+	padding: 5px;
+	border-radius: 3px;
+	display: none;
+	text-align: center;
+}
+
+#popUpText
+{
+	font-size: 60px;
+	display: inline-block;
+}
+
+#nextGameButton
+{
+	width: 0;
+	height: 0;
+	margin: 10px auto;
+	cursor: pointer;
+	outline: none;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 35px solid rgba(0, 222, 0, 0.5);
+}
+
+#window
+{
+	display: block;
+}
+
 .inputDataForm
 {
 	height: 40px;
-	box-shadow: 0 0 7px rgba(0,0,0,0.5);
+	box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
 	border-radius: 3px;
 }
 
@@ -19,7 +53,7 @@ select
     height: 20px;
     border: none;
 	outline: none;
-	box-shadow: 0 0 7px rgba(0,0,0,0.5);
+	box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
     font-size: 16px;
 	font-family: century gothic, footlight mt light;
 }
@@ -57,7 +91,7 @@ select
 	width: 0;
 	height: 0;
 	margin: 50px auto 75px auto;
-	box-shadow: 0 0 100px rgba(0,0,0,0.5);
+	box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
 	padding: 5px;
 	border-radius: 3px;
 }
@@ -69,13 +103,17 @@ select
 	height: 75px;
 	margin: 4px 4px 4px 4px;
 	display: inline-block;
-	box-shadow: 0 0 7px rgba(0,0,0,0.5);
+	box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
 	text-align: center;
+	cursor: pointer;
 }
 
 .textElement
 {
 	font-size: 60px;
+	font-family: consolas;
+	color: #035d5f;
+	font-weight: bold;
 }
 
 
