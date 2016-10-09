@@ -6,24 +6,30 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<div class="inputDataForm">
-			<select id="dropDownListSize" onchange="createElementForBlock(this.value)">
-				<option disabled>Field size:</option>
-				<option value="3" selected>Field size: 3 &times 3</option>
-				<option value="5">Field size: 5 &times 5</option>
-				<option value="7" disabled>Field size: 7 &times 7</option>
-			</select>
-			<select id="dropDownListComplexity">
-				<option disabled>Complexity:</option>
-				<option value="1" selected>Complexity: Easy</option>
-				<option value="2">Complexity: Hard</option>
-				<option value="3">Complexity: Very hard</option>
-			</select>
+		<div id="popUpWindow">
+			<span id="popUpText"></span>
+			<div id="nextGameButton" title="Next game" onclick="nextGame()"></div>
 		</div>
-		
-		<center><span class="text">x<span class="textSpec"> vs </span>o</span></center>
-		<div class="block" id="blockElements"></div>
-		<h1 class="footerInfo">Created by <a target="_blank" href="https://github.com/LefkaLefka">Lefka</a></h1>
-		<script src="main.js"></script>
+		<div id="mainWindow">
+			<div class="inputDataForm">
+				<select id="dropDownListSize" onchange="createElementForBlock(this.value)">
+					<option disabled>Field size:</option>
+					<option value="3" selected>Field size: 3 &times 3</option>
+					<option value="5">Field size: 5 &times 5</option>
+					<option value="7" disabled>Field size: 7 &times 7</option>
+				</select>
+				<select id="dropDownListComplexity">
+					<option disabled>Complexity:</option>
+					<option value="1" selected>Complexity: Easy</option>
+					<option value="2">Complexity: Hard</option>
+					<option value="3">Complexity: Very hard</option>
+				</select>
+			</div>
+
+			<center><span class="text">x<span class="textSpec"> vs </span>o</span></center>
+			<div class="block" id="blockElements"></div>
+			<h1 class="footerInfo">Created by <a target="_blank" href="https://github.com/LefkaLefka">Lefka</a></h1>
+			<script src="main.js"></script>
+		</div>
 	</body>
 </html>
