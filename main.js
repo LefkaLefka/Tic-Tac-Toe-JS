@@ -200,10 +200,8 @@ function check()
 				if (temp != 0)
 				{
 					// показываем победителя
-					// надо как-то перезапустить игру
-//////////////////////////////////////////////////////////////////
-					console.log(temp === fieldSize ? "cross" : "zero");
 					ifGameOver = true;
+					temp === fieldSize ? setTimeout(windowEndGame, 800, "you won", "rgba(0, 255, 0, 0.5)") : setTimeout(windowEndGame, 800, "toe win", "rgba(255, 0, 0, 0.5)");
 					break;
 				}
 			}
@@ -213,9 +211,29 @@ function check()
 		{
 			// заканчиваем игру
 			ifGameOver = true;
-			console.log("nothing");
-			// надо как-то перезапустить игру
-//////////////////////////////////////////////////////////////////
+			setTimeout(windowEndGame, 800, "draw", "rgba(0, 0, 0, 0.5)");
 		}
 	}
+}
+
+function windowEndGame(str, color)
+{
+	//var popUpWindow = document.getElementById("popUpWindow");
+	popUpText.innerHTML = "Game over:\n" + str;
+	popUpWindow.style.display = "block";
+	popUpWindow.style.boxShadow = "0 0 200px " + color;
+	//var window = document.getElementById("window");
+	mainWindow.style.display = "none";
+}
+
+// после окончания игры переходим к новой игре
+function nextGame()
+{
+	// устанавливаем дефолтные значения
+	setDefaultValue();
+	// возвращаем основное окно
+	popUpWindow.style.display = "none";
+	mainWindow.style.display = "block";
+	// пересоздаем элементы
+	createElementForBlock(fieldSize);
 }
